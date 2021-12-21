@@ -5,18 +5,13 @@ import uvicorn
 from app import db, ml, viz
 
 description = """
-Edit your app's title and description. See [https://fastapi.tiangolo.com/tutorial/metadata/](https://fastapi.tiangolo.com/tutorial/metadata/)
-
-To use these interactive docs:
-- Click on an endpoint below
-- Click the **Try it out** button
-- Edit the Request body or any parameters
-- Click the **Execute** button
-- Scroll down to see the Server response Code & Details
+Are you planning on using Kickstarter to help
+make your dreams a reality? This app can tell you
+whether your project will fail or fly!
 """
 
 app = FastAPI(
-    title='DS API',
+    title='Kickstarter Predictor',
     description=description,
     docs_url='/',
 )
